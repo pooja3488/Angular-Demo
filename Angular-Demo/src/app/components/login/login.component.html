@@ -1,0 +1,38 @@
+<div class="container pt-5">
+    <div class="row justify-content-sm-center mobile-section">
+        <div class="col-sm-6 col-md-5 col-lg-5 signIn-form">
+            <div class="text-center">
+                <img class="img-logo" src="./assets/images/Google-logo.png">
+                <h1 class="">
+                    Sign in
+                </h1>
+                <p class="font-weight-bold">Continue to Gmail</p>
+            </div>
+            <div class="login-section">
+                <form class="form-signin">
+                    <mat-form-field appearance="outline" class="w-100">
+                        <mat-label>Email or phone</mat-label>
+                        <input matInput placeholder="Email or phone">
+                    </mat-form-field>
+                    <div class="login-text">
+                        <a [routerLink]="['/forgot-password']">Forgot email?</a>
+                    </div>
+                    <div class="mt-4">
+                        Not your computer? Use guest mode to signin privately.
+                    </div>
+                    <div class="login-text">
+                        <a href="">Learn more</a>
+                    </div>
+                    <div class="row mt-4 mb-5">
+                        <div class="col-md-6 login-text">
+                            <a [routerLink]="['/signup']">Create account</a>
+                        </div>
+                        <div class="col-md-6 d-flex justify-content-end">
+                            <button class="btn next-btn" type="submit">Next</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
